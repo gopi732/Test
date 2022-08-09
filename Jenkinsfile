@@ -40,7 +40,7 @@ pipeline {
 	      withSonarQubeEnv('admin') {
 		   sh '${scannerHome}/bin/sonar-scanner \
 		      -D sonar.projectKey=CI-Test \
-		      -D sonar.python.coverage.reportPaths=coverage.xml'
+		      -D sonar.python.coverage.reportPaths=*.js,*.html,*.json,*.css'
 	      }
           }
       }
