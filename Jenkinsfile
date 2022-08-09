@@ -47,7 +47,7 @@ pipeline {
       stage('Deploy Atrifacts') {
 	  steps {
 	      rtUpload (
-		 serverId: 'JFrog',
+		 serverId: 'admin',
 		 spec: '''{
  			"files" :[
 			  {
